@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 10:33:55 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 16:49:03 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/27 20:36:21 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ void iter(T *addr, int len, void(*f)(const T &target)) {
 }
 
 // Just my own class for testing
-class CustomInt;
-
 class CustomInt {
     public:
         CustomInt() : _num(0) {};

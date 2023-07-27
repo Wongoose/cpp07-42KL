@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 01:03:18 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 10:23:43 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/27 16:42:34 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,6 @@ T &max(T &lhs, T &rhs) {
 }
 
 // My own class just for custom tests
-
-class CustomInt;
-
 class CustomInt {
     public:
         CustomInt() : _num(0) { std::cout << "Default constructor called!" << std::endl; };

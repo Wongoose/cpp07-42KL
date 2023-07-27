@@ -6,13 +6,11 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 18:35:20 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 10:24:27 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/27 20:35:53 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
-
-class CustomInt;
 
 int main() {
     std::cout << MAGENTA << "----- TESTING WITH INTEGERS -----" << std::endl << RESET;
