@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 01:03:18 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 01:03:25 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/27 10:23:43 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,36 @@ T &max(T &lhs, T &rhs) {
     else
         return (lhs);
 }
+
+// My own class just for custom tests
+
+class CustomInt;
+
+class CustomInt {
+    public:
+        CustomInt() : _num(0) { std::cout << "Default constructor called!" << std::endl; };
+        CustomInt(const int &num) : _num(num) {};
+        CustomInt(const CustomInt &copy) : _num(copy.get_num()) {};
+        CustomInt &operator=(CustomInt &rhs) {this->_num = rhs.get_num(); return (*this); };
+
+        // Destructor
+        ~CustomInt() { std::cout << "Default destructor called!" << std::endl; };
+
+        // Getters
+        int get_num(void) const { return (this->_num); };
+
+        // Operators
+        bool operator==(CustomInt const &rhs) const { return (this->_num == rhs.get_num()); };
+        bool operator!=(CustomInt const &rhs) const { return (this->_num != rhs.get_num()); };
+        bool operator>(CustomInt const &rhs) const { return (this->_num > rhs.get_num()); };
+        bool operator<(CustomInt const &rhs) const { return (this->_num < rhs.get_num()); };
+        bool operator>=(CustomInt const &rhs) const { return (this->_num >= rhs.get_num()); };
+        bool operator<=(CustomInt const &rhs) const { return (this->_num <= rhs.get_num()); };
+
+    private:
+        int _num;
+};
+
+std::ostream &operator<<(std::ostream &out, const CustomInt &rhs) { out << "#" << rhs.get_num() << "*"; return (out); };
 
 #endif

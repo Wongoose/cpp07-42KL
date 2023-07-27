@@ -6,11 +6,13 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 18:35:20 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 01:03:00 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/27 10:24:27 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
+
+class CustomInt;
 
 int main() {
     std::cout << MAGENTA << "----- TESTING WITH INTEGERS -----" << std::endl << RESET;
@@ -25,7 +27,7 @@ int main() {
     std::cout << std::endl;
     
     std::cout << MAGENTA << "----- TESTING WITH STRINGS -----" << std::endl << RESET;
-    // String comparison is by alphabetical order of the 1st char only. Where A is larger then B.
+    // String comparison is by alphabetical order (ASCII) of the 1st char only. Where B is larger then A.
     std::string s1 = "hello";
     std::string s2 = "gworld";
 
@@ -38,5 +40,14 @@ int main() {
 
     std::cout << MAGENTA << "----- TESTING WITH CUSTOM CLASS -----" << std::endl << RESET;
     // To be coded...
+    CustomInt num1 = CustomInt(42);
+    CustomInt num2 = CustomInt(101);
+
+    std::cout << YELLOW << "Before swap, num1 = " << num1 << ", and num2 = " << num2 << std::endl << RESET;
+    swap(num1, num2);
+    std::cout << "After swap, num1 = " << GREEN << num1 << RESET << ", and num2 = " << GREEN << num2 << RESET << std::endl;
+    std::cout << "Minimum string is: " << GREEN << ::min(num1, num2) << std::endl << RESET;
+    std::cout << "Maximum string is: " << GREEN << ::max(num1, num2) << std::endl << RESET;
+    std::cout << std::endl;
     return (0);
 }
