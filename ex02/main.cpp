@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 18:35:20 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 20:34:56 by zwong            ###   ########.fr       */
+/*   Updated: 2023/10/05 12:01:02 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 // Learn to create my own Array template where I can create with any data type
 // Normally it is, int var[10]; Now I can do, Array<int> var_name(<constructor args>).
+// Basically means it is an Array, but I can add more data inside next time!
+// - My own validation
+// - My own error checks/messages
 int main() {
     std::cout << MAGENTA << "----- TESTING CREATION OF TEMPLATE VS SYSTEM -----" << std::endl << RESET;
     Array<int> int_arr(10);

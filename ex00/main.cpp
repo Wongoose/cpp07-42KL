@@ -6,12 +6,14 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 18:35:20 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 20:35:53 by zwong            ###   ########.fr       */
+/*   Updated: 2023/10/05 11:49:59 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
 
+// Learning about templates in C++, used to write generic functions
+// Create a single function to work with different data types by using a template.
 int main() {
     std::cout << MAGENTA << "----- TESTING WITH INTEGERS -----" << std::endl << RESET;
     int a = 5;
@@ -36,8 +38,8 @@ int main() {
     std::cout << "Maximum string is: " << GREEN << ::max(s1, s2) << std::endl << RESET;
     std::cout << std::endl;
 
+    // Now let's test with my own custom class to see if template works!
     std::cout << MAGENTA << "----- TESTING WITH CUSTOM CLASS -----" << std::endl << RESET;
-    // To be coded...
     CustomInt num1 = CustomInt(42);
     CustomInt num2 = CustomInt(101);
 

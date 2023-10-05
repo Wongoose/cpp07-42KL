@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 10:33:55 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 20:36:21 by zwong            ###   ########.fr       */
+/*   Updated: 2023/10/05 11:53:29 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 
 template<typename T>
 void myprint(const T &target) {
-    std::cout << CYAN << target << std::endl << RESET;
+    std::cout << CYAN << "myprint: " << target << std::endl << RESET;
     return ;
 }
 

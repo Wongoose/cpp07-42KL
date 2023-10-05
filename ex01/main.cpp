@@ -6,12 +6,15 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 18:35:20 by zwong             #+#    #+#             */
-/*   Updated: 2023/07/27 20:36:25 by zwong            ###   ########.fr       */
+/*   Updated: 2023/10/05 11:54:39 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "iter.hpp"
 
+// This exercise is too use template for dynamically, wider scope
+// - Array of <T>
+// - Function argument o f <T>
 int main() {
     std::cout << MAGENTA << "----- TESTING WITH INTEGERS -----" << std::endl << RESET;
     int num_arr[10];
